@@ -21,10 +21,7 @@ pipeline {
                   // def app=docker.build(DOCKER_IMAGE_NAME)
                 }
             }
-            post {
-                failure {
-                }
-            }
+            
         }
 
         stage ('StopPrevious') {
@@ -39,11 +36,7 @@ pipeline {
                         '''
                 }
             }
-            post {
-                failure {
-                   
-                }
-            }
+           
         }
 
 
@@ -59,11 +52,7 @@ pipeline {
                         '''
                 }
             }
-            post {
-                failure {
-               
-                }
-            }
+            
         }
     }
 }
